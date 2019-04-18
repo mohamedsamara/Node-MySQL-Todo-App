@@ -22,3 +22,6 @@ npm start
 * [Express](https://expressjs.com/)
 
 * [MySQL](https://www.mysql.com/)
+
+* [Express Handlebars](https://github.com/ericf/express-handlebars)
+
