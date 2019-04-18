@@ -1,0 +1,28 @@
+<h1>View Works!</h1>
+
+<p>{{todo.todo_title}}</p>
+
+<form method='POST' , action='/todos/edit/{{todo.todo_id}}' )>
+
+    <label for="todo_title">Todo title</label>
+    <input type="text" name="todo_title" id="todo-title" value="{{todo.todo_title}}" required>
+
+
+    <label for="todo_body">Todo title</label>
+    <textarea name="todo_body" id="todo-body" rows="4" cols="50">
+        {{todo.todo_body}}
+    </textarea>
+
+    {{#if todo.is_completed}}
+    <input type="checkbox" id="todo-iscompleted" name="is_completed" checked="checked" />
+
+    {{else}}
+    <input type="checkbox" id="todo-iscompleted" name="is_completed" />
+
+    {{/if}}
+
+
+    <button type=" submit" class="btn btn-success float-right">Update Todo</button>
+
+</form>
+</a>
