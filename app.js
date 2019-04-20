@@ -1,11 +1,15 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const { getHomePage } = require('./routes/index');
 
 const app = express();
 const port = 3000;
+
+// set public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // parse form data client

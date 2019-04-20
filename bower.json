@@ -1,0 +1,21 @@
+{
+  "name": "node-mysql-todo-app",
+  "description": "Node MySQL Todo Application",
+  "main": "app.js",
+  "authors": ["Mohamed Samara (https://github.com/mohamedsamara)"],
+  "license": "ISC",
+  "keywords": ["node", "express", "mysql"],
+  "homepage": "https://github.com/mohamedsamara/Node-MySQL-Todo-App",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0"
+  }
+}

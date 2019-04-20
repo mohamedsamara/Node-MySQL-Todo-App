@@ -1,29 +1,24 @@
-<h1>Express Handlebars Works!</h1>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Todo Application</h1>
+        <p class="lead">Hey, Welcome in!</p>
+        <p class="lead">Check your todos! Add new todo! Mark previous todo done!</p>
+    </div>
+</div>
 
-<ul>
+
+<div class="form-group row">
+    <div class="col-sm-10">
+        <a href="/todos/add" class="btn btn-light">Add Todo</a>
+    </div>
+</div>
+
+<ul class="list-group">
 
     {{#each todos}}
-    <li>
-        <a href="/todos/edit/{{this.todo_id}}">
-            {{this.todo_title}}
-        </a>
 
-        <a href="/todos/delete/{{this.todo_id}}">
-            Delete
-        </a>
+    <li class="list-group-item"><a href="/todos/edit/{{this.todo_id}}">{{this.todo_title}}</a></li>
 
-        {{#if this.is_completed}}
-        <span>{{this.is_completed}}</span>
-
-        {{else}}
-        <i>{{this.is_completed}}</i>
-        {{/if}}
-
-    </li>
     {{/each}}
 
 </ul>
-
-<a href="/todos/add">
-    Add
-</a>
