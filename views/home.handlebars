@@ -17,7 +17,30 @@
 
     {{#each todos}}
 
-    <li class="list-group-item"><a href="/todos/edit/{{this.todo_id}}">{{this.todo_title}}</a></li>
+    <li class="list-group-item flex-todo-item">
+        <a href="/todos/edit/{{this.todo_id}}">{{this.todo_title}}</a>
+        {{#if this.is_completed}}
+
+        <div class="form-group">
+
+            <label class="form-check-label">Completed!
+                <input type="checkbox" class="form-check-input" id="{{this.todo_id}}" name="is_completed" checked>
+                <span class="checkmark"></span>
+            </label>
+
+        </div>
+        {{else}}
+
+        <div class="form-group">
+
+            <label class="form-check-label">Completed!
+                <input type="checkbox" class="form-check-input" id="{{this.todo_id}}" name="is_completed">
+                <span class="checkmark"></span>
+            </label>
+
+        </div>
+        {{/if}}
+    </li>
 
     {{/each}}
 

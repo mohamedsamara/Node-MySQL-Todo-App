@@ -59,6 +59,25 @@ router.post('/edit/:id', (req, res) => {
   });
 });
 
+router.post('/complete/:id', (req, res) => {
+  let todo_Id = req.params.id;
+  let is_completed = req.body.is_completed;
+
+  let sql = `UPDATE todos
+           SET is_completed = ?
+           WHERE todo_Id = ?`;
+
+  let data = [is_completed, todo_Id];
+
+  connection.query(sql, data, (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    res.redirect('/');
+  });
+});
+
 router.get('/delete/:id', (req, res) => {
   let todo_Id = req.params.id;
 
@@ -82,7 +101,7 @@ router.get('/add', (req, res) => {
 router.post('/add', (req, res) => {
   let todo_title = req.body.todo_title.trim();
   let todo_body = req.body.todo_body.trim();
-  let is_completed = req.body.is_completed;
+  let is_completed = req.body.is_completed_add;
 
   if (is_completed == 'on') {
     is_completed = 1;

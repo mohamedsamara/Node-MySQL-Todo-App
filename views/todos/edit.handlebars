@@ -12,27 +12,27 @@
     </div>
 
     {{#if todo.is_completed}}
+    <label class="form-check-label">Completed!
+        <input type="checkbox" class="form-check-input" id="{{todo.todo_id}}" name="is_completed" checked>
+        <span class="checkmark"></span>
+    </label>
 
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="todo-iscompleted" name="is_completed" checked>
-        <label class="form-check-label" for="todo-iscompleted">Completed!</label>
-    </div>
     {{else}}
+    <label class="form-check-label">Completed!
+        <input type="checkbox" class="form-check-input" id="{{todo.todo_id}}" name="is_completed">
+        <span class="checkmark"></span>
+    </label>
 
-    <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="todo-iscompleted" name="is_completed">
-        <label class="form-check-label" for="todo-iscompleted">Completed!</label>
-    </div>
     {{/if}}
 
-    <div class="form-row align-items-center">
-        <div class="col-sm-2 my-1">
+    <div class="row align-items-center">
+        <div class="col-lg-2 col-md-3 col-5 my-1">
             <button type="submit" class="btn btn-primary">Update Todo</button>
         </div>
-        <div class="col-sm-2 my-1">
+        <div class="col-md-1 px-lg-0 col-4 my-1">
             <a href="/todos/delete/{{todo.todo_id}}" class="btn btn-danger">Delete</a>
         </div>
-        <div class="col-sm-2 my-1">
+        <div class="col-md-9 col-4 my-1 text-lg-right">
             <a href="/" class="btn btn-link">Back</a>
         </div>
     </div>
