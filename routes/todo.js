@@ -127,4 +127,23 @@ router.post('/add', (req, res) => {
   });
 });
 
+router.post('/filter', (req, res) => {
+  let filter = req.body.search;
+
+  let sql =
+    `SELECT * FROM todos WHERE todo_title LIKE '%` +
+    filter +
+    `%' OR todo_body LIKE '%` +
+    filter +
+    `%'`;
+
+  connection.query(sql, (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    return res.json(result);
+  });
+});
+
 module.exports = router;

@@ -13,11 +13,19 @@
     </div>
 </div>
 
-<ul class="list-group">
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search Todos" id="todo-search">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" id="search-btn" type="button">Search</button>
+    </div>
+</div>
+
+<ul class="list-group" id="todo-list">
 
     {{#each todos}}
 
-    <li class="list-group-item flex-todo-item">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
         <a href="/todos/edit/{{this.todo_id}}">{{this.todo_title}}</a>
         {{#if this.is_completed}}
 
@@ -45,3 +53,5 @@
     {{/each}}
 
 </ul>
+
+<ul class="list-group" id="search-result"></ul>

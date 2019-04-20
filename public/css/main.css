@@ -4,23 +4,14 @@
   padding: 60px 0px;
 }
 
-/* start flex todo item styles */
-.flex-todo-item {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* start todo item styles */
 
-.flex-todo-item .form-check-label,
-.flex-todo-item .form-group {
+.list-group-item .form-check-label,
+.list-group-item .form-group {
   margin: 0;
 }
 
-/* end flex todo item styles */
+/* end todo item styles */
 
 /* start checkbox styles */
 
