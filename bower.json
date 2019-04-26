@@ -4,7 +4,7 @@
   "main": "app.js",
   "authors": ["Mohamed Samara (https://github.com/mohamedsamara)"],
   "license": "ISC",
-  "keywords": ["node", "express", "mysql"],
+  "keywords": ["node", "express", "mysql", "express-handlebars"],
   "homepage": "https://github.com/mohamedsamara/Node-MySQL-Todo-App",
   "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {

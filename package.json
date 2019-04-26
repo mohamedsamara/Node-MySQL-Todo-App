@@ -14,7 +14,8 @@
   "keywords": [
     "node",
     "express",
-    "mysql"
+    "mysql",
+    "express-handlebars"
   ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "ISC",
