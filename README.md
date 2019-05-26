@@ -1,5 +1,7 @@
 # Node MySQL Todo App
 
+![Node MySQL Todo App](/public/images/Node-MySQL-Todo-App.gif)
+
 ## Install
 
 Some basic Git commands are:
