@@ -7,7 +7,7 @@
 Some basic Git commands are:
 
 ```
-$ git clone https://github.com/mohamedsamara/Node-MySQL-Todo-App.git
+$ git clone https://github.com/mohamedsamara/node-mysql-todo-app.git
 $ cd project
 $ npm install
 $ bower install
