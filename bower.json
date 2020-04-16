@@ -3,7 +3,7 @@
   "description": "Node MySQL Todo Application",
   "main": "app.js",
   "authors": ["Mohamed Samara (https://github.com/mohamedsamara)"],
-  "license": "ISC",
+  "license": "MIT",
   "keywords": ["node", "express", "mysql", "express-handlebars"],
   "homepage": "https://github.com/mohamedsamara/node-mysql-todo-app#readme",
   "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],

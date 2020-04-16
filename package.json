@@ -18,7 +18,7 @@
     "express-handlebars"
   ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mohamedsamara/node-mysql-todo-app/issues"
   },
