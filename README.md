@@ -9,7 +9,6 @@ $ git clone https://github.com/mohamedsamara/node-mysql-todo-app.git
 $ cd project
 $ npm install
 $ bower install
-
 ```
 
 ## Start
